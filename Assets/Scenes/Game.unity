@@ -504,7 +504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &535644973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,6 +535,7 @@ MonoBehaviour:
     enemyCount: 20
     spawnInterval: 0.5
     waveInterval: 12
+  waveController: {fileID: 1888470326}
 --- !u!4 &535644974
 Transform:
   m_ObjectHideFlags: 0
@@ -1083,12 +1084,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currertWave:
-    enemyPrefabs:
-    - {fileID: 7591800460858037780, guid: 26fb4a3794983844781ecb674ca3474a, type: 3}
-    - {fileID: 1928853565600797406, guid: b363fb019a12f764bb4223e7aeda6e6a, type: 3}
-    enemyCount: 10
-    spawnInterval: 0.5
-    waveInterval: 7
+    enemyPrefabs: []
+    enemyCount: 0
+    spawnInterval: 0
+    waveInterval: 0
   spawnPoints:
   - {fileID: 1691507958}
   - {fileID: 1651771994}

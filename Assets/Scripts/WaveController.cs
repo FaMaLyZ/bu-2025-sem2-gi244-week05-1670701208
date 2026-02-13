@@ -30,4 +30,14 @@ public class WaveController : MonoBehaviour
             currertWave.enemyPrefabs[enemyIndex].transform.rotation
             );
     }
+    public void ChangeWave(Wave wave)
+    {
+        currertWave = wave;
+        enemySpawned = 0;
+        nextSpawnTime = Time.time;
+    }
+    public bool IsCompleted()
+    {
+        return enemySpawned >= currertWave.enemyCount;
+    }
 }
